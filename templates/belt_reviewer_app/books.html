@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'belt_reviewer_app/css/format.css'}">
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		#container {
+			width: 80%;
+			margin: 0 10%;
+		}
+
+		.cfb {clear:both;}
+
+		/* Header / Navbar */
+		.FL {float: left;}
+
+		.logoutLink {
+			float: right;
+			display: inline-block;
+		}
+
+		.addBookReviewLink {
+			float: right;
+			margin-right: 2%;
+		}
+
+
+
+
+
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div>
+			<h1 class="FL">Welcome, {{request.session.id}}</h1>
+			<div>
+				<a href="" class="logoutLink">Logout</a>
+				<form action="/addBook" method="POST">
+					<a href="" class="addBookReviewLink">Add Book and Review</a>
+				</form>
+			</div>
+		</div>
+		<div class="cfb"></div>
+
+		<div>
+			<div>
+				<h3>Recent Book Reviews: </h3>
+
+				<div>
+				{{% for review in Reviews %}}
+				<a href="">{{review.id}}</a>
+				{% endfor %}
+				</div>
+
+			</div>
+		</div>
+
+		<div>
+			<h3>Other BOoks with Reviews: </h3>
+			<div>
+				{% for other in Reviews %}
+				<a href=""></a>
+				{% endfor %}
+
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>

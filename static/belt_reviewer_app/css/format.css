@@ -1,0 +1,178 @@
+/******************* Universal CSS ***********************************************/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	width: 1008px;
+}
+
+/* Display/Positioning */
+.dispIBlck {display: inline-block;}
+.FL {float: left;}
+.FR {float: right;}
+.cfb {clear: both;}
+
+/* Text */
+.txtc {text-align: center;}
+
+
+/* Margins */
+.mgT2P {margin-top: 2%;}
+.mgR2P {margin-right: 2%;}
+.mgB2P {margin-bottom: 2%;}
+.mgL2P {margin-left: 2%;}
+
+.mgT20px {margin-top: 20px;}
+.mgR20px {margin-right: 20px;}
+.mgB20px {margin-bottom: 20px;}
+.mgL20px {margin-left: 20px;}
+
+/* Padding */
+.pdAll5px {padding: 5px;}
+.pdTB5px {padding: 10px 0px;}
+.pdLR20px {padding: 0px 20px;}
+
+.pdT10px {padding-top: 10px;}
+.pdT10px {padding-right: 10px;}
+.pdT10px {padding-bottom: 10px;}
+.pdT10px {padding-left: 10px;}
+
+
+/*********************** Login and Registration *************************************/
+
+/* Welcome Header */
+.welcomeHead {
+	margin: 1% 0% 5% 0%;
+}
+
+/* Registration CSS */
+.registerParentDiv {
+	float: left;
+	width: 40%;
+	padding-top: 20px;
+	margin-left: 2%;
+	border: 2px solid black;
+}
+
+.registerTitle {
+    margin-bottom: 5%;
+    margin-left: 5%;
+    transform: translateY(-37px);
+    background-color: white;
+    width: 20%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;			
+}
+
+.registerParentFormDiv {
+	padding: 20px 5px;
+}
+
+
+.registerParentFormDiv p {
+	float: left;
+	width: 25%;
+	line-height: 40px;
+}
+
+.registerParentFormDiv input[type="text"], .registerParentFormDiv input[type="password"] {
+    display: inline-block;
+    float: left;
+    width: 70%;
+    margin-bottom: 2%;
+    height: 40px;
+    font-size: 20px;
+    border: 2px solid black;
+    box-shadow: 1px 1px 0px 0px black;		
+}
+
+.registerSubmitButton {
+	float: right;
+	padding: 5px 20px;
+	margin-right: 5%;
+	border: 2px solid black;
+	background-color: white;
+	box-shadow: 3px 3px 0px 0px black;
+	margin: 10% 5% 5% 0%;			
+}
+
+/* Login CSS */
+.loginTitle {
+    margin-bottom: 5%;
+    margin-left: 5%;
+    transform: translateY(-37px);
+    background-color: white;
+    width: 15%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;			
+}
+
+
+
+/************************** Header / Title *****************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************ Books Page CSS **********************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************** Add Page CSS ****************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+/******************** Reviews Page CSS ************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+/******************** User Page CSS *************************************

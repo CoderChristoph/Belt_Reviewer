@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			font-family: 'helvetica new', sans-serif
+		}
+
+		#container {
+			width: 1008px;
+			margin: 2% auto;
+		}
+
+		.mgB2P {margin-bottom:2%;}
+
+		.mbgT2P {margin-top: 2%;}
+
+		.cfb {clear: both;}
+
+		form {
+			width: 60%;
+		}
+
+		.labelCol {
+			float: left;
+			display: inline-block;
+			width: 40%
+		}
+
+		.inputCol {
+			float: left;
+			display: inline-block;
+			width: 60%;
+			margin-bottom: 10px;
+		}
+
+		.inputCol input {
+			width: 100%;
+			line-height: 30px;
+			border: 1px solid darkgray;
+			border-radius: 5px;
+			font-size: 18px;
+		}
+
+		.submitButton {
+		    display: block;
+		    float: right;
+		    margin-top: 10px;
+		    margin-bottom: 2%;
+		    padding: 5px 10px;
+		    background-color: dodgerblue;
+		    color: white;
+		    border: 2px solid black;
+		    box-shadow: 3px 2px 0px 1px black;
+		    cursor: pointer;			
+		}
+
+		span {color: red;}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div>
+			<h1 class="mgB2P">Registration</h1>
+			<form action='/process' method='POST'>
+				{% csrf_token %}
+				<div class="labelCol">
+					<p>First Name: </p>
+				</div>
+				<div class="inputCol">
+					<input type="text" name="f_name">
+				</div>
+				<div class="labelCol"
+					<p>Last Name: </p>
+				</div>
+
+				<div class="inputCol">
+					<input type="text" name="l_name">
+				</div>
+
+				<div class="labelCol">
+					<p>Email: </p>
+				</div>
+
+				<div class="inputCol">
+					<input type="text" name="email">
+				</div>
+
+				<div class="labelCol">
+					<p>Password: </p>
+				</div>
+
+				<div class="inputCol">
+					<input type="password" name="pw">
+				</div>
+
+				<div class="labelCol">
+					<p>Confirm Password: </p>
+				</div>
+
+				<div class="inputCol">
+					<input type="password" name="cpw">
+				</div>
+
+				<div class="cfb"></div>
+
+				<div>
+					<input type="hidden" name="hidden" value="Register" class="submitButton">
+					<input type="submit" name="submit" value="Register" class="submitButton">
+				</div>
+
+				<div class="cfb"></div>
+			</form>
+		</div>
+
+		<h1 class="mgB2P mbgT2P">Login</h1>
+		<form action="/process" method="POST">
+			{% csrf_token %}
+			<div class="labelCol">
+				<p>Email: </p>
+			</div>
+
+			<div class="inputCol">
+				<input type="text" name="LEmail">
+			</div>
+
+			<div class="labelCol">
+				<p>Password: </p>
+			</div>
+
+			<div class="inputCol">
+				<input type="password" name="LPassword">
+			</div>
+			<div class="cfb"></div>
+
+			<div>
+				<input type="hidden" name="hidden" value="Login">
+				<input type="submit" name="submit" value="Login" class="submitButton">
+			</div>
+			<div class="cfb"></div>			
+		</form>
+
+		{% for message in messages %}
+			<span>{{message}}</span>
+		{% endfor %}
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Success</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		#container {
+			width: 1008px;
+			margin: 2% auto;
+		}
+
+		.mgB10{margin-bottom: 10px;}
+
+		.successColor {color: limegreen;}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<h1 class="mgB10">Success! Welcome, {{request.session.F_name}}</h1>
+
+		{% for message in messages %}
+		<p class="mgB10 successColor">{{message}}</p>
+		{% endfor %}
+
+		
+
+
+	</div>
+
+</body>
+</html>
